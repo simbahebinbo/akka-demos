@@ -1,9 +1,9 @@
-package com.lab.akka.sample;
+package com.lab;
 
 import java.io.IOException;
 
 import akka.actor.typed.ActorSystem;
-import com.lab.akka.sample.GreeterMain.Start;
+import com.lab.GreeterMain.Start;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

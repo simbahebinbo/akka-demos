@@ -1,4 +1,4 @@
-package com.lab.akka.sample;
+package com.lab;
 
 import java.util.Objects;
 

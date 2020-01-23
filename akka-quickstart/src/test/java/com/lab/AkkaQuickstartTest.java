@@ -1,4 +1,4 @@
-package com.lab.akka.sample;
+package com.lab;
 
 import akka.actor.testkit.typed.javadsl.TestKitJunitResource;
 import akka.actor.testkit.typed.javadsl.TestProbe;

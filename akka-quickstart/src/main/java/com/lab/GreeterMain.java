@@ -1,4 +1,4 @@
-package com.lab.akka.sample;
+package com.lab;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
@@ -6,7 +6,7 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
-import com.lab.akka.sample.GreeterMain.Start;
+import com.lab.GreeterMain.Start;
 
 public class GreeterMain extends AbstractBehavior<Start> {
 
