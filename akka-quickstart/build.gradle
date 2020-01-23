@@ -49,8 +49,8 @@ application {
 
 
 dependencies {
-    implementation("com.typesafe.akka:akka-actor-typed_2.13:$akkaActorVersion")
-    implementation("com.typesafe.akka:akka-slf4j_2.13:$akkaActorVersion")
+    implementation("com.typesafe.akka:akka-actor-typed_2.13:$akkaVersion")
+    implementation("com.typesafe.akka:akka-slf4j_2.13:$akkaVersion")
 
     implementation("com.google.guava:guava:$guavaVersion")
     implementation "commons-io:commons-io:$commonsioVersion"
@@ -66,7 +66,7 @@ dependencies {
 
     implementation("org.slf4j:slf4j-simple:$slf4jVersion")
 
-    testImplementation("com.typesafe.akka:akka-actor-testkit-typed_2.13:$akkaActorVersion")
+    testImplementation("com.typesafe.akka:akka-actor-testkit-typed_2.13:$akkaVersion")
     testImplementation("junit:junit:$junitVersion")
 }
 
