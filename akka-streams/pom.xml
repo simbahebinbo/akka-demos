@@ -21,7 +21,8 @@
     <commons-io.version>2.5</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
     <commons-lang3.version>3.5</commons-lang3.version>
-    <akka.version>2.5.2</akka.version>
+    <akka.stream.version>2.5.2</akka.stream.version>
+    <akka.slf4j.version>2.5.2</akka.slf4j.version>
     <scala.version>2.11</scala.version>
     <lombok.version>1.18.10</lombok.version>
   </properties>
@@ -30,19 +31,19 @@
     <dependency>
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-stream_${scala.version}</artifactId>
-      <version>${akka.version}</version>
+      <version>${akka.stream.version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-stream-testkit_${scala.version}</artifactId>
-      <version>${akka.version}</version>
+      <version>${akka.stream.version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-slf4j_${scala.version}</artifactId>
-      <version>${akka.version}</version>
+      <version>${akka.slf4j.version}</version>
     </dependency>
 
     <dependency>
