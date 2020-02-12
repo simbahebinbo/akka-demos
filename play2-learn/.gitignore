@@ -1,0 +1,10 @@
+.idea_module
+.g8
+.idea
+target/
+out/
+build/
+project/project
+project/target
+*.iml
+.gradle/
