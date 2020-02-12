@@ -1,0 +1,8 @@
+.idea_module
+.g8
+.idea
+target/
+out/
+project/project
+project/target
+*.iml
