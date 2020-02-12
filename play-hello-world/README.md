@@ -17,6 +17,11 @@ $ ./target/universal/play-hello-world-1.0.0/bin/play-hello-world
 $ sbt run
 ```
 
+测试
+```
+$ sbt test
+```
+
 链接： http://localhost:9000
 
 ```
