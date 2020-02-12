@@ -1,0 +1,13 @@
+*.iml
+.idea
+.DS_Store
+.g8
+.gradle
+build
+target
+logs
+.idea_module
+out
+project/project
+project/target
+
