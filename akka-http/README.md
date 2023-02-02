@@ -1,6 +1,6 @@
 ## Akka HTTP
 
-This module contains articles about Akka HTTP. 
+This module contains articles about Akka HTTP.
 
 ### Relevant articles:
 
@@ -11,6 +11,13 @@ This module contains articles about Akka HTTP.
 ```
 $ mvn clean package
 ```
+
+# 测试
+
+```
+$ mvn clean test
+```
+
 # 运行
 
 ```
