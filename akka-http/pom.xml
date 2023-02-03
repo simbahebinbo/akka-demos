@@ -24,7 +24,7 @@
         <scala.binary.version>2.13</scala.binary.version>
 
         <junit.version>4.13.2</junit.version>
-        <slf4j.version>2.0.6</slf4j.version>
+        <slf4j.version>1.7.36</slf4j.version>
 
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -52,7 +52,15 @@
             <artifactId>akka-http-jackson_${scala.binary.version}</artifactId>
             <version>${akka.http.version}</version>
         </dependency>
-        
+
+        <!--        akka-slf4j 和 slf4j-simple 的版本必须匹配。否则无法打印日志。-->
+        <!--        此处 akka-slf4j 依赖 slf4j-api 的 1.7.36 版本。则 slf4j-simple 版本必须为 1.7.36。-->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-slf4j_${scala.binary.version}</artifactId>
+            <version>${akka.core.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
