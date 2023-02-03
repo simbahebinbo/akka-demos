@@ -23,3 +23,12 @@ $ mvn clean test
 ```
 $ java -jar target/akka-http-1.0.0.jar
 ```
+
+浏览器访问
+
+```
+http://localhost:9999/users/1
+http://localhost:9999/users/2
+http://localhost:9999/users/3 
+```
+

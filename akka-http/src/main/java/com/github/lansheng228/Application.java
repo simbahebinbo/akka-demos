@@ -12,7 +12,7 @@ public class Application {
         ActorRef userActor = system.actorOf(UserActor.props(), "userActor");
         UserServer server = new UserServer(userActor);
         String host = "0.0.0.0";
-        int port = 9091;
+        int port = 9999;
         log.info("Server listen on {}:{}", host, port);
         server.startServer(host, port, system);
     }
