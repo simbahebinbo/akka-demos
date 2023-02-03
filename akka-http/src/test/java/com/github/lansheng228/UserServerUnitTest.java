@@ -7,8 +7,10 @@ import akka.http.javadsl.model.HttpEntities;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.testkit.JUnitRouteTest;
 import akka.http.javadsl.testkit.TestRoute;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+@Slf4j
 public class UserServerUnitTest extends JUnitRouteTest {
 
     ActorSystem system = ActorSystem.create("helloAkkaHttpServer");
@@ -31,6 +33,7 @@ public class UserServerUnitTest extends JUnitRouteTest {
                         .withEntity(HttpEntities.create(ContentTypes.APPLICATION_JSON, zaphod())))
                 .assertStatusCode(201);
 
+        log.info("All Pass");
     }
 
     private String alice() {
@@ -40,5 +43,4 @@ public class UserServerUnitTest extends JUnitRouteTest {
     private String zaphod() {
         return "{\"id\":42,\"name\":\"Zaphod\"}";
     }
-
 }

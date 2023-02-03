@@ -21,7 +21,7 @@
 
         <akka.http.version>10.4.0</akka.http.version>
         <akka.core.version>2.7.0</akka.core.version>
-        <scala.version>2.13</scala.version>
+        <scala.binary.version>2.13</scala.binary.version>
 
         <junit.version>4.13.2</junit.version>
         <slf4j.version>2.0.6</slf4j.version>
@@ -37,28 +37,22 @@
     <dependencies>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-http_${scala.version}</artifactId>
+            <artifactId>akka-http_${scala.binary.version}</artifactId>
             <version>${akka.http.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-stream_${scala.version}</artifactId>
+            <artifactId>akka-stream_${scala.binary.version}</artifactId>
             <version>${akka.core.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-http-jackson_${scala.version}</artifactId>
+            <artifactId>akka-http-jackson_${scala.binary.version}</artifactId>
             <version>${akka.http.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-slf4j_${scala.version}</artifactId>
-            <version>${akka.core.version}</version>
-        </dependency>
-
+        
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -73,14 +67,14 @@
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-testkit_${scala.version}</artifactId>
+            <artifactId>akka-testkit_${scala.binary.version}</artifactId>
             <version>${akka.core.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-http-testkit_${scala.version}</artifactId>
+            <artifactId>akka-http-testkit_${scala.binary.version}</artifactId>
             <version>${akka.http.version}</version>
             <scope>test</scope>
         </dependency>
